@@ -16,7 +16,7 @@ The era of USB debugging is over (well, almost over :p). It’s an old trick and
 
 2. **Get your device’s IP address:**
 	<ul>
-		<li>Open cmd and run <b>adb shell netcfg</b> or <b>adb shell ifconfig</b></li>
+		<li>Open cmd and run <b>adb shell netcfg</b> or <b>adb shell ifconfig(android version with 6.0 or higher)</b></li>
 		<li>From the result you will see a part with <b>wlan0</b></li>
 		<li>Here you will see something like <b>inet addr:192.168……</b>. This is your <b>DEVICE_IP_ADDRESS</b></li>
 	</ul>
