@@ -34,9 +34,9 @@ The era of USB debugging is over (well, almost over :p). It’s an old trick and
 	<ul style="list-style-type:disc">
 		<li>Disconnect any previous connection by following step 4</li>
 		<li>Restart the adb server by <b>adb tcpip 5555</b></li>
-		<li> Connect a device and find the ip using step 2</li>
+		<li> Connect a device with USB and find the ip using step 2</li>
 		<li>In cmd: <b>adb -d connect DEVICE_IP_ADDRESS:5555</b></li>
-		<li>Device connected! Remove the USB and connect the next device, find the ip and connect using <b>adb -d connect DEVICE_IP_ADDRESS:5555</b></li>
+		<li>Device connected! Remove the USB and connect the next device with USB, find the ip and connect using <b>adb -d connect DEVICE_IP_ADDRESS:5555</b></li>
 		<li>Connect as much as device you want. Fun right!!</li>
 	</ul>
 
