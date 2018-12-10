@@ -12,7 +12,7 @@ The era of USB debugging is over (well, almost over :p). It’s an old trick and
 		<li>Open cmd and run: <b>adb tcpip 5555</b></li>
 	</ul>
 	
-	**If you see that 'adb is not recognized as internal or external command', your adb is not set up globally. Set up adb globally by following the steps written in the bottom of this tutorial.**
+	If you see that **adb is not recognized as internal or external command**, your adb is not set up globally. Set up adb globally by following the steps written in the bottom of this tutorial.
 
 2. **Get your device’s IP address:**
 	<ul>
@@ -21,7 +21,7 @@ The era of USB debugging is over (well, almost over :p). It’s an old trick and
 		<li>Here you will see something like <b>inet addr:192.168……</b>. This is your <b>DEVICE_IP_ADDRESS</b></li>
 	</ul>
 	
-	**To find the IP address while using OSX run the command 'adb shell ip route'**
+	To find the IP address while using OSX run the command **adb shell ip route**
 
 3. **Now connect:**
 	<ul style="list-style-type:disc">
@@ -36,7 +36,7 @@ The era of USB debugging is over (well, almost over :p). It’s an old trick and
 		<li>In cmd: <b>adb -s DEVICE_IP_ADDRESS:5555</b></li>
 	</ul>
 	
-	**WARNING: leaving the option enabled is dangerous. Anyone in your network can connect to your device in debug, even if you are in data network. Do it only when connected to a trusted Wi-Fi and remember to disconnect it when done!**
+	**WARNING:** leaving the option enabled is dangerous. Anyone in your network can connect to your device in debug, even if you are in data network. Do it only when connected to a trusted Wi-Fi and remember to disconnect it when done!
 
 
 Set up adb(Android Debug Bridge) globally:
