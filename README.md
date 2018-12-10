@@ -30,7 +30,7 @@ The era of USB debugging is over (well, almost over :p). It’s an old trick and
 	
 	**That’s all!** You can now remove the USB and run the app from Android studio or any other way!
 	
-	**For connecting more than one device (this one is actuallity more usefull though :p)**
+	**For connecting more than one device (this one is actually more usefull though :p)**
 	<ul style="list-style-type:disc">
 		<li>Disconnect any previous connection by following step 4</li>
 		<li>Restart the adb server by <b>adb tcpip 5555</b></li>
@@ -51,7 +51,7 @@ The era of USB debugging is over (well, almost over :p). It’s an old trick and
 
 Set up adb(Android Debug Bridge) globally:
 ------------------------------------------
-We need to set a path variable to use adb from anywhere.  Don’t be frightened or bored, it’s super easy. The adb is normally located here: 
+We need to set a path variable to use adb from anywhere.  Don’t be frightened or bored, it’s super easy. The adb is normally located here if you didn't installed you sdk other than Local Disk(C :):
 
 Go to: Local Disk(C :) -> Users -> (Username) ->  AppData -> Local -> Android -> sdk -> platform-tools
 
