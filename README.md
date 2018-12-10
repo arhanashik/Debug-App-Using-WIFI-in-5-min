@@ -29,11 +29,21 @@ The era of USB debugging is over (well, almost over :p). It’s an old trick and
 	</ul>
 	
 	**That’s all!** You can now remove the USB and run the app from Android studio or any other way!
+	
+	**For connecting more than one device (this one is actuallity more usefull though :p)**
+	<ul style="list-style-type:disc">
+		<li>Disconnect any previous connection by following step 4</li>
+		<li>Restart the adb server by <b>adb tcpip 5555</b></li>
+		<li> Connect a device and find the ip using step 2</li>
+		<li>In cmd: <b>adb -d connect DEVICE_IP_ADDRESS:5555</b></li>
+		<li>Device connected! Remove the USB and connect the next device, find the ip and connect using <b>adb -d connect DEVICE_IP_ADDRESS:5555</b></li>
+		<li>Connect as much as device you want. Fun right!!</li>
+	</ul>
 
 4. **Disconnect:**
 	<br />After debugging done disconnect the device using:
 	<ul style="list-style-type:disc">
-		<li>In cmd: <b>adb -s DEVICE_IP_ADDRESS:5555</b></li>
+		<li>In cmd: <b>adb disconnect DEVICE_IP_ADDRESS:5555</b></li>
 	</ul>
 	
 	**WARNING:** leaving the option enabled is dangerous. Anyone in your network can connect to your device in debug, even if you are in data network. Do it only when connected to a trusted Wi-Fi and remember to disconnect it when done!
