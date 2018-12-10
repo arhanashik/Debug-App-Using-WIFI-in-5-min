@@ -7,39 +7,39 @@ The era of USB debugging is over (well, almost over :p). It’s an old trick and
 <br />Let’s fight:
 
 <ol>
-<li>Initializing the wireless debugging process:
+<li> <b>Initializing the wireless debugging process:</b>
 	<ul>
 		<li>Connect your device with PC using USB (opps)</li>
 		<li>Open cmd and run: `adb tcpip 5555`</li>
 	</ul>
 	
-	<br />*If you see that <b>adb is not recognized as internal or external command</b>, your adb is not set up globally. Set up adb globally by following the steps written in the bottom of this tutorial.
+	*If you see that <b>adb is not recognized as internal or external command</b>, your adb is not set up globally. Set up adb globally by following the steps written in the bottom of this tutorial.
 </li>
 
-<li>Get your device’s IP address:
+<li> <b>Get your device’s IP address:</b>
 	<ul>
 		<li>Open cmd and run <b>adb shell netcfg</b> or <b>adb shell ifconfig</b></li>
 		<li>From the result you will see a part with <b>wlan0</b></li>
 		<li>Here you will see something like <b>inet addr:192.168……</b>. This is your <b>DEVICE_IP_ADDRESS</b></li>
-		<li>**To find the IP address while using OSX run the command <b>adb shell ip route</b></li>
+		<li>*To find the IP address while using OSX run the command <b>adb shell ip route</b></li>
 	</ul>
 </li>
 
-<li>Now connect:
+<li> <b>Now connect:</b>
 	<ul>
 		<li>In cmd: <b>adb connect DEVICE_IP_ADDRESS:5555</b></li>
 	</ul>
 	
-	<br /><b>That’s all!</b> You can now remove the USB and run the app from Android studio or any other way!
+	<b>That’s all!</b> You can now remove the USB and run the app from Android studio or any other way!
 </li>
 
-<li>Disconnect:
+<li> <b>Disconnect:</b>
 	<br />After debugging done disconnect the device using:
 	<ul>
 		<li>In cmd: <b>adb -s DEVICE_IP_ADDRESS:5555</b></li>
 	</ul>
 	
-	<br /><b>WARNING:</b> leaving the option enabled is dangerous. Anyone in your network can connect to your device in debug, even if you are in data network. Do it only when connected to a trusted Wi-Fi and remember to disconnect it when done!
+	<b>WARNING:</b> leaving the option enabled is dangerous. Anyone in your network can connect to your device in debug, even if you are in data network. Do it only when connected to a trusted Wi-Fi and remember to disconnect it when done!
 </li>
 </ol>
 
