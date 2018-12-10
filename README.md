@@ -1,4 +1,4 @@
-WIRELESS DEBUGGING IN 5 MIN!
+Wireless Debugging in 5 Min!
 ===============================
 
 Wireless charging is very popular now-a-days. So, why not wireless debugging! 
@@ -20,7 +20,7 @@ The era of USB debugging is over (well, almost over :p). It’s an old trick and
 		<li>From the result you will see a part with <b>wlan0</b></li>
 		<li>Here you will see something like <b>inet addr:192.168……</b>. This is your <b>DEVICE_IP_ADDRESS</b></li>
 	</ul>
-	<br />
+	
 	**To find the IP address while using OSX run the command 'adb shell ip route'**
 
 3. **Now connect:**
@@ -28,7 +28,6 @@ The era of USB debugging is over (well, almost over :p). It’s an old trick and
 		<li>In cmd: <b>adb connect DEVICE_IP_ADDRESS:5555</b></li>
 	</ul>
 	
-	<br />
 	**That’s all!** You can now remove the USB and run the app from Android studio or any other way!
 
 4. **Disconnect:**
@@ -39,7 +38,7 @@ The era of USB debugging is over (well, almost over :p). It’s an old trick and
 	
 	**WARNING: leaving the option enabled is dangerous. Anyone in your network can connect to your device in debug, even if you are in data network. Do it only when connected to a trusted Wi-Fi and remember to disconnect it when done!**
 
-<br />
+
 Set up adb(Android Debug Bridge) globally:
 ------------------------------------------
 We need to set a path variable to use adb from anywhere.  Don’t be frightened or bored, it’s super easy. The adb is normally located here: 
