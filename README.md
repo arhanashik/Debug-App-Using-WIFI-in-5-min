@@ -8,7 +8,7 @@ The era of USB debugging is over (well, almost over :p). It’s an old trick and
 <br />
 1. **Initializing the wireless debugging process:**
 	<ul>
-		<li>Connect your device and PC in same network **(it's must)**</li>
+		<li>Connect your device and PC in same network <b>(it's must)</b></li>
 		<li>Connect your device with PC using USB (opps)</li>
 		<li>Open cmd and run: <b>adb tcpip 5555</b></li>
 	</ul>
