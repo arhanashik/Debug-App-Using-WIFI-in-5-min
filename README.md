@@ -8,28 +8,37 @@ The era of USB debugging is over (well, almost over :p). It’s an old trick and
 
 <ol>
 <li>Initializing the wireless debugging process:
-..* Connect your device with PC using USB (opps).
-..* Open cmd and run: `adb tcpip 5555`
-
-`*If you see that **‘adb is not recognized as internal or external command’**, your adb is not set up globally. Set up adb globally by following the steps written in the bottom of this tutorial.`
+	<ul>
+		<li>Connect your device with PC using USB (opps)</li>
+		<li>Open cmd and run: `adb tcpip 5555`</li>
+		<li>
+			`*If you see that **‘adb is not recognized as internal or external command’**, your adb is not set up globally. Set up adb globally by following the steps written in the bottom of this tutorial.`
+		</li>
+	</ul>
 </li>
 
-2.  Get your device’s IP address:
-..* Open cmd and run `adb shell netcfg` or `adb shell ifconfig`. From the result you will see a part with **wlan0**.  
-..* Here you will see something like **inet addr:192.168……**. This is your **DEVICE_IP_ADDRESS**.
+<li>Get your device’s IP address:
+	<ul>
+		<li>Open cmd and run `adb shell netcfg` or `adb shell ifconfig`. From the result you will see a part with **wlan0**</li>
+		<li>Here you will see something like **inet addr:192.168……**. This is your **DEVICE_IP_ADDRESS**</li>
+		<li>**To find the IP address while using OSX run the command `adb shell ip route`.**</li>
+	</ul>
+</li>
 
-**To find the IP address while using OSX run the command `adb shell ip route`.**
-
-3. Now connect: 
-..* In cmd: `adb connect DEVICE_IP_ADDRESS:5555`
-
+<li>Now connect:
+	<ul>
+		<li>In cmd: `adb connect DEVICE_IP_ADDRESS:5555`</li>
+	</ul>
 **That’s all!** You can now remove the USB and run the app from Android studio or any other way!
+</li>
 
-4. Disconnect:
-After debugging done disconnect the device using: 
-..* `adb -s DEVICE_IP_ADDRESS:5555`
-
-WARNING: leaving the option enabled is dangerous. Anyone in your network can connect to your device in debug, even if you are in data network. Do it only when connected to a trusted Wi-Fi and remember to disconnect it when done!
+<li>Disconnect:
+	<br />After debugging done disconnect the device using:
+	<ul>
+		<li>In cmd: `adb -s DEVICE_IP_ADDRESS:5555`</li>
+	</ul>
+	WARNING: leaving the option enabled is dangerous. Anyone in your network can connect to your device in debug, even if you are in data network. Do it only when connected to a trusted Wi-Fi and remember to disconnect it when done!
+</li>
 </ol>
 
 
@@ -39,12 +48,14 @@ We need to set a path variable to use adb from anywhere.  Don’t be frightened 
 
 Go to: Local Disk(C :) -> Users -> (Username) ->  AppData -> Local -> Android -> sdk -> platform-tools
 
--> Copy this folder’s path.
--> Now right click on (My Computer/This PC), select properties. 
--> A window will be opened with your PC’s basic info. 
--> From the left panel of this window select ‘Advanced system settings’.
--> Another dialog will be opened -> select ‘Advanced’ tab -> Click ‘Environment Varibales…’(at the bottom of the dialog)
--> Another dialog will be opened. From the upper part double click on ‘Path’.
--> In windows version <10 place a ‘;’ and paste the path here.
--> In windows version 10 click on ‘New’ and paste the path.
--> Now click on all three ‘ok’ buttons and we are done.
+<ul>
+	<li>Copy this folder’s path</li>
+	<li>Now right click on (My Computer/This PC), select properties</li>
+	<li>A window will be opened with your PC’s basic info</li>
+	<li>From the left panel of this window select ‘Advanced system settings’</li>
+	<li>Another dialog will be opened -> select ‘Advanced’ tab -> Click ‘Environment Varibales…’(at the bottom of the dialog)</li>
+	<li>Another dialog will be opened. From the upper part double click on ‘Path’</li>
+	<li>In windows version <10 place a ‘;’ and paste the path here</li>
+	<li>In windows version 10 click on ‘New’ and paste the path.</li>
+	<li>Now click on all three ‘ok’ buttons and we are done</li>
+</ul>
