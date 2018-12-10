@@ -8,7 +8,7 @@ The era of USB debugging is over (well, almost over :p). It’s an old trick and
 
 <ol>
 <li> <b>Initializing the wireless debugging process:</b>
-	<ul>
+	<ul style="list-style-type:disc">
 		<li>Connect your device with PC using USB (opps)</li>
 		<li>Open cmd and run: `adb tcpip 5555`</li>
 	</ul>
@@ -17,7 +17,7 @@ The era of USB debugging is over (well, almost over :p). It’s an old trick and
 </li>
 
 <li> <b>Get your device’s IP address:</b>
-	<ul>
+	<ul style="list-style-type:disc">
 		<li>Open cmd and run <b>adb shell netcfg</b> or <b>adb shell ifconfig</b></li>
 		<li>From the result you will see a part with <b>wlan0</b></li>
 		<li>Here you will see something like <b>inet addr:192.168……</b>. This is your <b>DEVICE_IP_ADDRESS</b></li>
@@ -26,16 +26,16 @@ The era of USB debugging is over (well, almost over :p). It’s an old trick and
 </li>
 
 <li> <b>Now connect:</b>
-	<ul>
+	<ul style="list-style-type:disc">
 		<li>In cmd: <b>adb connect DEVICE_IP_ADDRESS:5555</b></li>
 	</ul>
 	
-	<b>That’s all!</b> You can now remove the USB and run the app from Android studio or any other way!
+	<strong>That’s all!</strong> You can now remove the USB and run the app from Android studio or any other way!
 </li>
 
 <li> <b>Disconnect:</b>
 	<br />After debugging done disconnect the device using:
-	<ul>
+	<ul style="list-style-type:disc">
 		<li>In cmd: <b>adb -s DEVICE_IP_ADDRESS:5555</b></li>
 	</ul>
 	
